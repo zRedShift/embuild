@@ -135,6 +135,7 @@ impl Factory {
 
         let builder = bindgen::Builder::default()
             .use_core()
+            .size_t_is_usize(true)
             .layout_tests(false)
             .rustfmt_bindings(false)
             .derive_default(true)
